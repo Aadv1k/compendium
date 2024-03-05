@@ -1,3 +1,7 @@
+= Graph Theory with Applications to Engineering & Computer Science (Narsingh Deo)
+Aadvik <aadv1k@outlook.com>
+
+
 :stem: latexmath
 
 If v~i~ is connected to e~j~, the vertex is said to be incident to the edge, and vice-versa.
