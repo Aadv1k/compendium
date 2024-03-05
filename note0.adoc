@@ -27,4 +27,4 @@ NOTE: the 4-color-problem is a popular conjecture in CS, specifically graph theo
 
 A graph is called isomorphic (equivalent to congruence in geomtry) if the incidence between the edges ands vertices is maintained. That is, if e~i~ is incident to v~1~, v~2~ then 'e~i~ => 'v~1~, 'v~2~. Two graphs are isomorphic, if they share the *same number of vertices and edges*, *the same degree across the vertices* and a bijection between the adjacencies acorss different vertices.
 
-
+graph `g` is said to be a subgraph of `G` if for vertex `i` latexmath:[g(v_{i}) \in G] and every vertex `g` is also in `G` that is latexmath:[G(v_{i}) = g(v_{j})] and every edge of graph `g` also connects within graph `G`
