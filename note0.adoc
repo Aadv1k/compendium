@@ -5,26 +5,31 @@ Aadvik <aadv1k@outlook.com>
 
 An algorithm is a set of finite, unambiguous deterministic instructions, that with the correct starting conditions can produce a desired output
 
-Correctness: defines how close the algorithm's final *certificate* (a state of execution that gets the algorithm closer to completion) gets to the expected output
 
-Iteration is a fundamental of algorithm performance, which can be categorized into three types
+An algorithm may operate under one of 3 cases :- 
 
-** Diverging Iteration: the "bad" case scenario, in this case each iteration doesn't or actively deters the algorithm from completion. This occurs due to bad end-conditions or runaway recursions.
-** Converging Iteration: the "good" case where each iteration geets the algorithm closer to the desired output (eg the Fibonacci algorithm)
-** Flat Iteration: the neutral case, where the iteration doesn't do anything except completion:
-
-_an example of a converging iteration_
+* *Worst-Case Scenario* in this case each execution step doesn't or actively deters the algorithm from completion. This occurs due to bad end-conditions or runaway recursions.
+* *Best-Case Scenario*: where each execution step gets the algorithm closer to the desired output
+* *Average-Case Scenratio*: the execution steps don't do much at all
 
 [source, python]
 ----
-a, b, c = 1, 1, 0
 
-print(0, a, b, sep="\n")
+"""
+- Worst: Reversed data, need to check every element O(n^2)
+- Best: Partially sorted data O(n)
+- Average: already sorted data O(n)
+"""
 
-for i in range((n := 10)):
-    print((c := a + b))
-    a = b
-    b = c
+def insertion_sort(s):
+    for i in range(1, len(s)):
+        cur, j = s[i], i
+
+        while j > 0 and s[j-1] > cur:
+            s[j] = s[j-1]
+            j -= 1
+
+        s[j] = cur
 ----
 
 == Polynomials and Non-Deterministic Polynomials
