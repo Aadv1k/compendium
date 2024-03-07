@@ -1,0 +1,34 @@
+= Graph Theory with Applications to Engineering & Computer Science (Narsingh Deo)
+Aadvik <aadv1k@outlook.com>
+
+
+:stem: latexmath
+
+If v~i~ is connected to e~j~, the vertex is said to be incident to the edge, and vice-versa.
+
+A (degree|valency) is the number of edges connected to a particualr vertex, this includes self-connecting edges.
+
+- _Theorem 0_: The sum of the degress of all vertices, will always be twice the amount of edges
+
+Proof:
+
+latexmath:[\sum_{i=1}^n d(v_{i}) = 2E]
+
+We know that for each edge there are exactly two vertices, which connect to each other. Contributing *2* to the total sum of degree.
+
+latexmath:[E = \frac{\sum_{i=1}^n d(v_{i})}{2}]
+
+or, conversely
+
+latexmath:[2E = \sum_{i=1}^n d(v_{i})]
+
+- A Regular Graphs is a graph where the degree of each vertex is equal latexmath:[degree(v_{i}) = d]
+- A Null Graph is a graph with no edges, eg all vertices have the degree 0
+
+NOTE: a graph must contain atleast one vertex to be a graph at all.
+
+NOTE: the 4-color-problem is a popular conjecture in CS, specifically graph theory. It states that a map, can be filled with atleast 4 distinct colors without same adjacent colors.
+
+A graph is called isomorphic (equivalent to congruence in geomtry) if the incidence between the edges ands vertices is maintained. That is, if e~i~ is incident to v~1~, v~2~ then 'e~i~ => 'v~1~, 'v~2~. Two graphs are isomorphic, if they share the *same number of vertices and edges*, *the same degree across the vertices* and a bijection between the adjacencies acorss different vertices.
+
+graph `g` is said to be a subgraph of `G` if for vertex `i` latexmath:[g(v_{i}) \in G] and every vertex `g` is also in `G` that is latexmath:[G(v_{i}) = g(v_{j})] and every edge of graph `g` also connects within graph `G`
