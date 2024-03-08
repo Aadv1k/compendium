@@ -1,7 +1,6 @@
 = Graph Theory with Applications to Engineering & Computer Science (Narsingh Deo)
 Aadvik <aadv1k@outlook.com>
 
-
 :stem: latexmath
 
 If v~i~ is connected to e~j~, the vertex is said to be incident to the edge, and vice-versa.
@@ -32,3 +31,10 @@ NOTE: the 4-color-problem is a popular conjecture in CS, specifically graph theo
 A graph is called isomorphic (equivalent to congruence in geomtry) if the incidence between the edges ands vertices is maintained. That is, if e~i~ is incident to v~1~, v~2~ then 'e~i~ => 'v~1~, 'v~2~. Two graphs are isomorphic, if they share the *same number of vertices and edges*, *the same degree across the vertices* and a bijection between the adjacencies acorss different vertices.
 
 graph `g` is said to be a subgraph of `G` if for vertex `i` latexmath:[g(v_{i}) \in G] and every vertex `g` is also in `G` that is latexmath:[G(v_{i}) = g(v_{j})] and every edge of graph `g` also connects within graph `G`
+
+*Theorem 2* A graph is disconnected if and only if its vertex set V can be partioned into two or more sets such that no edge has either of it's endpoints in different subsets.
+
+*Proof* For a graph to be considered connected there needs to be a path between each vertex pair in the graph, according to the statement the graph is partionined into two subsets, such that there isn't an edge that connects any vertex in subset A or B we can say the graph is disconnected. Conversely if we have a disconnected graph, and we pick a vertex A and form a subset that contains all paths from A to every other vertex, the remaining vertices will form a disjointed subset.
+
+image::./images/graph-theory-0.svg[a visual of Theorem 2, align=center]
+
