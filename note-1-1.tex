@@ -1,0 +1,53 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{amsmath}
+
+\title{A Short \& Sweet Introduction to Graph Theory by a Math Dropout}
+\author{}
+\date{23/03/2024}
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+A graph is an abstract construct where vertices connect with an indefinite number of vertices through edges. Formally, it can be defined as a set of vertices and a set of edges, where each edge is a pair of vertices.
+
+\[G = (V, E) \]
+\[V = \{1, 2, 3, 4\} \]
+\[E = \{\{1, 2\}, \{3, 4\}\} \]
+
+\begin{itemize}
+    \item An edge is said to be \textbf{incident} to a vertex if it connects with it.
+    \item \textbf{Degree} is defined as the number of edges incident to a particular vertex.    
+\end{itemize}
+
+\begin{theorem}
+\label{thrm:sum-deg-equals-twice-edges}
+The sum of the degrees of all vertices in graph $G$ is always equal to twice the number of edges.
+\[
+\sum_{v \in V} deg(v) = 2|E|
+\]
+\end{theorem}
+
+\textbf{Intuitive Proof:} the theorem states that the sum of degrees of all the vertices is always twice the number of edges. We know that an edge always connects two vertices; hence, whenever a new edge is added to a graph, the degree of each of the two vertices it connects increases by one, contributing two to the total sum.
+
+\begin{proof}
+    This is also known as the \textbf{Handshake Lemma}
+    
+    Let $G = (V, E)$ where $V$ are the vertices, $E$ are the edges.
+
+    \[
+    \forall e \in E \quad \text{where} \quad e = (v_i, v_j) \in V 
+    \]
+
+    We know, every edge connects two vertices, so every edge contributes two to the total degree for $G$
+    \[
+    \frac{\sum_{v \in V} deg(v)}{2} = |E|
+    \]
+    \[
+    \sum_{v \in V} deg(v) = 2|E|
+    \]
+\end{proof}
+
+\end{document}
