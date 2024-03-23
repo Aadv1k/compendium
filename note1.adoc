@@ -32,9 +32,15 @@ A graph is called isomorphic (equivalent to congruence in geomtry) if the incide
 
 graph `g` is said to be a subgraph of `G` if for vertex `i` latexmath:[g(v_{i}) \in G] and every vertex `g` is also in `G` that is latexmath:[G(v_{i}) = g(v_{j})] and every edge of graph `g` also connects within graph `G`
 
-*Theorem 2* A graph is disconnected if and only if its vertex set V can be partioned into two or more sets such that no edge has either of it's endpoints in different subsets.
+*Theorem 2.0* A graph is disconnected if and only if its vertex set V can be partioned into two or more sets such that no edge has either of it's endpoints in different subsets.
 
 *Proof* For a graph to be considered connected there needs to be a path between each vertex pair in the graph, according to the statement the graph is partionined into two subsets, such that there isn't an edge that connects any vertex in subset A or B we can say the graph is disconnected. Conversely if we have a disconnected graph, and we pick a vertex A and form a subset that contains all paths from A to every other vertex, the remaining vertices will form a disjointed subset.
 
 image::./images/graph-theory-0.svg[a visual of Theorem 2, align=center]
+
+*Theorem 2.1* If a graph has just two vertices, of an odd degree there must be at-least one path joining them
+
+*Proof* Since we are provided with two vertices, an even degree on either of them would imply a self-loop since there isn't any other node to connect with, hence an odd degree is would guarantee that the two vertices are connected
+
+
 
